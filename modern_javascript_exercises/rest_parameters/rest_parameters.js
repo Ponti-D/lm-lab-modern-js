@@ -1,10 +1,5 @@
 // Instructions can be found in rest_parameters.md
-
-function add(a, b) {
+export function add(...props) {
   // Add a loop here
-  return a + b;
+return props.reduce((total, num) => total += num)
 }
-
-add(1, 2, 3, 4, 5);
-
-module.exports = add;
